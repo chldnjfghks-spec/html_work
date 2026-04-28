@@ -1,0 +1,20 @@
+.left-box{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  float: left;
+}
+
+.right-box{
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  float: left;
+}
+.footer{
+  clear: both;
+  float: none;
+  width: 200px;
+  height: 100px;
+  background-color: aqua;
+}
