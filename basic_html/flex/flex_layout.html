@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+      }
+      main{
+        text-align: justify;
+        padding: 10px;
+        column-count: 4;
+        column-width: 200px;
+        column-gap: 20px;
+        column-rule-color: red;
+        column-rule-style: solid;
+      }
+      header {
+        border-bottom: 1px solid gray;
+      }
+      footer {
+        border-top: 1px solid gray;
+      }
+      nav {
+        border-right: 1px solid gray;
+      }
+      aside {
+        border-left: 1px solid gray;
+      }
+      nav,
+      aside {
+        /*너비 고정*/
+        flex-basis: 150px;
+        /*다른 놈 희생 */
+        flex-shrink: 0;
+      }
+      .content {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Holy Grail Layout</h1>
+      </header>
+      <section class="content">
+        <nav>
+          <ul>
+            <li>main</li>
+            <li>about</li>
+            <li>help</li>
+          </ul>
+        </nav>
+        <main>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
+            velit exercitationem maxime! Veritatis architecto suscipit magnam
+            aliquid fugiat, adipisci ratione impedit quasi provident voluptate
+            quaerat vitae iure officia sapiente quas? Lorem, ipsum dolor sit
+            amet consectetur adipisicing elit. Animi velit exercitationem
+            maxime! Veritatis architecto suscipit magnam aliquid fugiat,
+            adipisci ratione impedit quasi provident voluptate quaerat vitae
+            iure officia sapiente quas? Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Animi velit exercitationem maxime! Veritatis
+            architecto suscipit magnam aliquid fugiat, adipisci ratione impedit
+            quasi provident voluptate quaerat vitae iure officia sapiente quas?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
+            velit exercitationem maxime! Veritatis architecto suscipit magnam
+            aliquid fugiat, adipisci ratione impedit quasi provident voluptate
+            quaerat vitae iure officia sapiente quas? Lorem, ipsum dolor sit
+            amet consectetur adipisicing elit. Animi velit exercitationem
+            maxime! Veritatis architecto suscipit magnam aliquid fugiat,
+            adipisci ratione impedit quasi provident voluptate quaerat vitae
+            iure officia sapiente quas?
+          </p>
+        </main>
+        <aside>AD (광고)</aside>
+      </section>
+      <footer>
+        <a href="www.naver.com">홈페이지</a>
+      </footer>
+    </div>
+  </body>
+</html>
